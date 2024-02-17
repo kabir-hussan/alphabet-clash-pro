@@ -28,7 +28,7 @@
         <!-- Home screen end -->
 
         <!-- Playground screen start-->
-        <section>
+        <section class="play-ground hidden">
             <!-- artboard, keyboard, button container -->
             <div class="flex flex-col justify-center items-center gap-20 pt-20">
                 <!-- Artboard for screen -->
@@ -38,7 +38,7 @@
                         <p class="bg-[#2F2929] text-white px-6 py-4 text-base font-medium rounded-b-xl">Don't watch keyboard  while playing...</p>
                     </div>
                     <!-- letter shown on the screen -->
-                    <div class="flex justify-center items-center h-full">
+                    <div class="flex justify-center items-center min-h-screen">
                         <p class="text-[#010313] text-[125px] font-semibold">Y</p>
                     </div>
                 </div>
@@ -97,7 +97,16 @@
             </div>
         </section>
 
-        <section>
+        <!-- final scores -->
+        <section class="score flex flex-col justify-center items-center min-h-screen">
+            <div class="text-white space-y-6 text-center bg-[#FFFFFF12] p-6 border-[#FFFFFF33] border-2 rounded-lg">
+                <h1 class="text-6xl">
+                   <span class="font-extrabold">Scores:  </span>
+                   <span class="font-medium"> 14</span>
+                </h1>
+                <button class="bg-white text-black text-2xl font-medium rounded-lg px-8 py-4">Play Again</button>
+                <p class="text-xl font-medium">Practice will make you Pro</p>
+            </div>
 
         </section>
     </main>
